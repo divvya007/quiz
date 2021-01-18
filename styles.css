@@ -1,0 +1,36 @@
+.container {
+  border: 1px;
+  margin: 25px 25px;
+  height: 100%;
+}
+.btn {
+  border: 1px;
+  background-color: inherit;
+  padding: 16px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  display: inline-block;
+  color: orange;
+}
+.btn:hover {
+  background: #eee;
+}
+
+.text {
+  color: orange;
+  margin: 10px;
+}
+
+.border {
+  border: 1px solid black;
+  margin: 50px auto;
+  width: 50%;
+}
+
+.quizBox {
+  margin: 50px auto;
+  width: fit-content;
+}
+p {
+  margin: 10px;
+}
