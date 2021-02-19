@@ -20,12 +20,6 @@ const questionSet = [
     options: ["Uruguay", "Spain", "Australia", "Brazil"],
     answer: "Uruguay",
   },
-  {
-    id: "q4",
-    question: "uhyfhhjfghjgfhgjhgrhjgcjhgcjhgcjhg?",
-    options: ["Asia", "Europe", "Australia", "Africa"],
-    answer: "Australia",
-  },
 ];
 
 // starts here
