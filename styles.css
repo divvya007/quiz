@@ -34,3 +34,34 @@
 p {
   margin: 10px;
 }
+#quizBtn {
+  display: inline-block;
+  margin: 5px;
+}
+
+.btnClass {
+  margin: 5px;
+}
+
+.ncClass {
+  margin: 25px auto;
+  border: 2px;
+}
+/* #question-list {
+ border: 1px solid black; 
+ height: 50%; 
+ } */
+
+.divCont {
+  margin: 10%;
+}
+
+.btnClass {
+  height: 75%;
+  width: fit-content;
+  /* cursor: pointer; */
+}
+.divForBtn_class {
+}
+#btnid_0 {
+}
