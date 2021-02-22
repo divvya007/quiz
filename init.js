@@ -35,8 +35,11 @@ for (let i = 0; i < questionSet.length; i++) {
 
   const divForBtn = document.createElement("div");
   const divForAns = document.createElement("div");
+  const divHolder = document.createElement("div");
 
+  divForAns.className = "answer_";
   divContainer.className = "divCont";
+  divHolder.className = "divHoldingAllThree";
 
   divContainer.id = "divCont_" + i;
   divForBtn.id = "divBtn_id" + i;
@@ -44,6 +47,7 @@ for (let i = 0; i < questionSet.length; i++) {
   divForBtn.className = "divForBtn_class";
 
   newDiv.append(divContainer);
+  newDiv.append(divHolder);
   console.log(divContainer);
 
   for (let index = 0; index < questionSet[i].options.length; index++) {
@@ -65,6 +69,9 @@ for (let i = 0; i < questionSet.length; i++) {
     divForBtn.append(btnContainer);
     newDiv.append(divForBtn);
     newDiv.append(divForAns);
+    divHolder.append(divContainer);
+    divHolder.append(divForBtn);
+    divHolder.append(divForAns);
   }
 }
 console.timeEnd("time took to complete");

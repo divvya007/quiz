@@ -1,3 +1,6 @@
+body {
+  background-color: black;
+}
 .container {
   border: 1px;
   margin: 25px 25px;
@@ -10,14 +13,14 @@
   font-size: 15px;
   cursor: pointer;
   display: inline-block;
-  color: orange;
+  color: #ffa500;
 }
 .btn:hover {
   background: #eee;
 }
 
 .text {
-  color: orange;
+  color: #f08731;
   margin: 10px;
 }
 
@@ -28,8 +31,13 @@
 }
 
 .quizBox {
-  margin: 50px auto;
-  width: fit-content;
+  background-color: #ff7077;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  font-size: x-large;
+  font-family: Open Sans, sans-serif;
+  color: #fff;
 }
 p {
   margin: 10px;
@@ -53,7 +61,7 @@ p {
  } */
 
 .divCont {
-  margin: 10%;
+  /* margin: 10%; */
 }
 
 .btnClass {
@@ -62,6 +70,19 @@ p {
   /* cursor: pointer; */
 }
 .divForBtn_class {
+  margin: 2%;
+  padding: 1%;
+  margin-left: 5%;
 }
 #btnid_0 {
+}
+.answer_ {
+  margin: 2%;
+}
+
+.divHoldingAllThree {
+  border: 3px solid black;
+  background-color: #9e9e9e;
+  margin: 7% auto;
+  padding: 3%;
 }
