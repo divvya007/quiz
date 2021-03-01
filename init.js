@@ -1,4 +1,3 @@
-console.time("time took to complete");
 const questionSet = [
   {
     id: "q1",
@@ -45,6 +44,7 @@ for (let i = 0; i < questionSet.length; i++) {
   divForBtn.id = "divBtn_id" + i;
 
   divForBtn.className = "divForBtn_class";
+  divForBtn.className += " divForBtn_ColorChange";
 
   newDiv.append(divContainer);
   newDiv.append(divHolder);
@@ -55,14 +55,25 @@ for (let i = 0; i < questionSet.length; i++) {
     const btnContainer = document.createElement("button");
     btnContainer.innerHTML = questionSet[i].options[index];
     btnContainer.addEventListener("click", function () {
+      const btnArray = divForBtn.getElementsByClassName("changeColor");
+      console.log(btnArray[0]);
+      if (btnArray[0]) {
+        btnArray[0].classList.remove("changeColor");
+      }
+      // btnContainer.classList.remove("divForbtn_ColorChange");
+      debugger;
+
+      btnContainer.classList.add("changeColor");
+
       if (questionSet[i].options[index] === questionSet[i].answer) {
-        divForAns.innerHTML = "Correct Answer";
+        divForAns.innerHTML = "Answer: Correct Answer";
       } else {
-        divForAns.innerHTML = "Wrong Answer";
+        divForAns.innerHTML = "Answer: Wrong Answer";
       }
     });
 
     btnContainer.className = "btnClass";
+    // btnContainer.className += " removeColor";
     btnContainer.id = "btnid_" + index;
 
     divContainer.append(btnContainer);
@@ -74,4 +85,3 @@ for (let i = 0; i < questionSet.length; i++) {
     divHolder.append(divForAns);
   }
 }
-console.timeEnd("time took to complete");
